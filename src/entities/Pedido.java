@@ -1,10 +1,13 @@
 package entities;
 
+import java.time.LocalDate;
+import java.util.UUID;
+
 public class Pedido {
 
 	private UUID id;
 	private String nomeCliente;
-	private Localdate dataPedido;
+	private LocalDate dataPedido;
 	private Double valor;
 	private String descricao;
 
@@ -24,11 +27,11 @@ public class Pedido {
 		this.nomeCliente = nomeCliente;
 	}
 
-	public Localdate getDataPedido() {
+	public LocalDate getDataPedido() {
 		return dataPedido;
 	}
 
-	public void setDataPedido(Localdate dataPedido) {
+	public void setDataPedido(LocalDate dataPedido) {
 		this.dataPedido = dataPedido;
 	}
 
